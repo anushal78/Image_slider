@@ -1,0 +1,83 @@
+
+/*added style to whole web page*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*added style body of the page*/
+body {
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	display: flex;
+	background-color: #03f0fc;
+}
+
+/*created an container for the image*/
+.image-container {
+	height: 350px;
+	width: 100%;
+	max-width: 500px;
+	overflow: hidden;
+}
+.carousel img {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	border: 10px solid #e134eb;
+	object-fit:cover;
+}
+
+.image-container .carousel {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s ease;
+}
+
+/*creating a wrapper for image*/
+.wrapper {
+	width: 100%;
+	height: 400px;
+	max-width: 650px;
+	display: flex;
+	background: #dfeb34;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px #eb5f34;
+}
+
+/*creating a wrap around button*/
+.wrapper i.button {
+	height: 36px;
+	width: 36px;
+	line-height: 36px;
+	top:50%;
+	position: absolute;
+    transform: translateY(-50%);
+    background-color: #000000; 
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff; 
+    font-size: 15px;
+    transition: all 0.3s linear;
+    z-index: 100;
+    cursor: pointer;
+}
+/*creating a button*/
+
+i.button:active {
+	transform: scale(0.94) translateY(-50%);
+}
+
+i#prev {
+	left: 25px;
+}
+
+i#next {
+	right: 25px;
+}
